@@ -1,0 +1,340 @@
+/* FOR TIMER */
+#demo{
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 2%;
+}
+#sec-event{
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 2%;
+}
+/* OTHER */
+.tline {
+    color: white;
+    background-color: black;
+    border: white solid 2px;
+    border-radius: 30px;
+    padding: 1.5%;
+    transition: 300ms;
+    position: relative;
+}
+
+.tline:hover {
+    cursor: pointer;
+    color: black;
+    background-color: lightgrey;
+    font-size: large;
+}
+
+.logo {
+    display: inline-flex
+}
+
+.txt {
+    display: inline-flex;
+}
+#banner{
+    height: 20%;
+}
+#btn {
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 1.5%;
+    border: white solid 2px;
+    transition: 500ms;
+}
+
+#btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: lightgrey;
+    border: black solid 2px;
+    font-size: large;
+}
+
+.potha {
+    margin: 3%;
+
+}
+
+table {
+    margin-top: 5%;
+}
+
+tr {
+    border: none;
+    margin: 1%;
+    transition: 500ms;
+    /* border: black solid 2px; */
+}
+
+td {
+    border: none;
+    margin-bottom: 5%;
+    width: 30%;
+    margin: 1%;
+    /* border: solid black 2px; */
+}
+
+/* CARDS */ 
+
+.cards{
+    border: black dotted 2px;
+    width: fit-content;
+    margin-left: 2%;
+    border: dashed 3px black;
+    margin-bottom: 4%;
+    width:80%;
+    padding: 2%;
+    margin: 5%;
+} 
+@media only screen and (min-width: 768px) {
+    .cards{
+        width: 80%;
+        height: 40%;
+        padding: 2%;
+        margin: 2%;
+    }
+    #banner{
+        height:60%;
+    }
+}
+/* OTHER */
+
+.new {
+    display: inline-flex;
+}
+
+.list-item {
+    display: flex;
+}
+
+/*<-------------------------FOOTER--------------------------->*/
+.footer{
+    background:#000;
+    margin-top: 3%;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    }
+    
+    .footer .row{
+    margin: 2%;
+    color:gray;
+    font-size:0.8em;
+    margin-bottom: 3%;
+    }
+    #icon{
+        margin-left: 1.5%;
+    }
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    #icon{
+        margin-left: 3%;
+    }
+    
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+/*<-------------------------MODAL--------------------------->*/
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: 300ms;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+    height: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*<-------------------------MODAL CONTENT--------------------------->*/
+@import url(https://fonts.googleapis.com/css?family=Dosis:500);
+
+body {
+    background: #F1F1F1;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.timeline {
+    counter-reset: year 0;
+    position: relative;
+    background: white;
+    margin-top: 3%;
+}
+
+.timeline:hover {
+    background-color: white;
+}
+
+.timeline li {
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+ul:nth-child(1) {
+    color: #4caf50;
+}
+
+.timeline li:before {
+    counter-increment: year;
+    content: counter(year);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #4caf50;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    background: #F1F1F1;
+    color: #000;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.timeline li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    top: 25px;
+    left: -50%;
+    z-index: -999;
+    transition: all ease-in-out .3s;
+}
+
+.timeline li:first-child:after {
+    content: none;
+}
+
+.timeline li.active {
+    color: #555555;
+}
+
+.timeline li.active:before {
+    background: #4caf50;
+    color: black;
+}
+
+.timeline li.active+li:after {
+    background: #4caf50;
+}
+
+/*<-------------------------TOOL TIP--------------------------->*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* PARTICIPATE */
+.part{
+    color: white;
+    border-radius: 20px;
+    padding: 2%;
+    background-color: black;
+    margin-bottom: 2%;
+    transition: 300ms;
+}
+.part:hover{
+    cursor: pointer;
+    background-color: rgb(214, 214, 84);
+    color: black;
+    border: black solid 1px;
+}
