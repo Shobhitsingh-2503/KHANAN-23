@@ -1,0 +1,68 @@
+form{
+    margin: 3%;
+}
+#button{
+    margin-top: 3%;
+}
+#btn{
+    padding: 1%;
+    border: black solid 1.3px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    transition: 300ms;
+}
+#btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.footer{
+    background:#000;
+    margin-top: 3%;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    bottom:0px;
+    }
+    
+    .footer .row{
+    margin: 2%;
+    color:gray;
+    font-size:0.8em;
+    margin-bottom: 3%;
+    }
+    #icon{
+        margin-left: 1.5%;
+    }
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    #icon{
+        margin-left: 3%;
+    }
+    
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
