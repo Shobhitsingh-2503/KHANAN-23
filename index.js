@@ -31,3 +31,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+document.querySelector('.part').addEventListener("click",function(e){
+  window.location.href = 'Registeration forms/nirvana/nirvana.html';
+})
