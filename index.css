@@ -48,6 +48,7 @@
     padding: 1.5%;
     border: white solid 2px;
     transition: 500ms;
+    user-select: none;
 }
 
 #btn:hover {
@@ -331,6 +332,7 @@ ul:nth-child(1) {
     background-color: black;
     margin-bottom: 2%;
     transition: 300ms;
+    user-select: none;
 }
 .part:hover{
     cursor: pointer;
