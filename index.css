@@ -1,18 +1,22 @@
 /* FOR TIMER */
-#demo{
+#demo {
     color: black;
     background-color: lightgray;
     border-radius: 5px;
     width: fit-content;
     padding: 2%;
+    margin-top: 20px;
 }
-#sec-event{
+
+#sec-event {
     color: black;
     background-color: lightgray;
     border-radius: 5px;
     width: fit-content;
     padding: 2%;
+    margin-top: 20px;
 }
+
 /* OTHER */
 .tline {
     color: white;
@@ -39,9 +43,11 @@
 .txt {
     display: inline-flex;
 }
-#banner{
+
+#banner {
     height: 20%;
 }
+
 #btn {
     color: white;
     background-color: black;
@@ -84,29 +90,34 @@ td {
     /* border: solid black 2px; */
 }
 
-/* CARDS */ 
+/* CARDS */
 
-.cards{
+.cards {
     border: black dotted 2px;
     width: fit-content;
     margin-left: 2%;
     border: dashed 3px black;
     margin-bottom: 4%;
-    width:80%;
+    width: 80%;
     padding: 2%;
     margin: 5%;
-} 
-@media only screen and (min-width: 768px) {
-    .cards{
+}
+
+@media only screen and (min-width: 768px) { /*laptop*/
+    .cards {
         width: 80%;
         height: 40%;
         padding: 2%;
         margin: 2%;
     }
-    #banner{
-        height:60%;
+    .mobile-view{
+        display: none;
+    }
+    #banner {
+        height: 60%;
     }
 }
+
 /* OTHER */
 
 .new {
@@ -118,54 +129,61 @@ td {
 }
 
 /*<-------------------------FOOTER--------------------------->*/
-.footer{
-    background:#000;
+.footer {
+    background: #000;
     margin-top: 3%;
-    padding:30px 0px;
+    padding: 30px 0px;
     font-family: 'Play', sans-serif;
-    }
-    
-    .footer .row{
+}
+
+.footer .row {
     margin: 2%;
-    color:gray;
-    font-size:0.8em;
+    color: gray;
+    font-size: 0.8em;
     margin-bottom: 3%;
+}
+
+#icon {
+    margin-left: 1.5%;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) { /*MOBILE*/
+    .footer {
+        text-align: left;
+        padding: 5%;
     }
-    #icon{
-        margin-left: 1.5%;
+    #laptop-view{ /*FOR DIFF DISPLAY IN SCREENS (LAPTOP VIEW KAREGA AND MOBILE MAI NHI)*/
+        display: none;
     }
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    #icon{
+    #icon {
         margin-left: 3%;
     }
-    
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
     }
-    .footer .row a i{
-    margin:0% 3%;
+
+    .footer .row a i {
+        margin: 0% 3%;
     }
-    }
+}
 
 /*<-------------------------MODAL--------------------------->*/
 /* The Modal (background) */
@@ -190,7 +208,6 @@ td {
     /* Black w/ opacity */
     transition: 300ms;
 }
-
 /* Modal Content/Box */
 .modal-content {
     background-color: white;
@@ -325,8 +342,9 @@ ul:nth-child(1) {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
 /* PARTICIPATE */
-.part{
+.part {
     color: white;
     border-radius: 20px;
     padding: 2%;
@@ -335,9 +353,19 @@ ul:nth-child(1) {
     transition: 300ms;
     user-select: none;
 }
-.part:hover{
+
+.part:hover {
     cursor: pointer;
     background-color: rgb(214, 214, 84);
     color: black;
     border: black solid 1px;
+}
+
+.rule {
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 1.5%;
+    border-radius: 20px;
 }

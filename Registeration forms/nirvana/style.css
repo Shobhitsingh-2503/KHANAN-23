@@ -10,6 +10,7 @@ form{
     border-radius: 20px;
     color: black;
     background-color: white;
+    margin: 5%;
     transition: 300ms;
     user-select: none;
 }
@@ -18,52 +19,58 @@ form{
     color: white;
     background-color: black;
 }
-.footer{
-    background:#000;
+.footer {
+    background: #000;
     margin-top: 3%;
-    padding:30px 0px;
+    padding: 30px 0px;
     font-family: 'Play', sans-serif;
-    bottom:0px;
-    }
-    
-    .footer .row{
+}
+
+.footer .row {
     margin: 2%;
-    color:gray;
-    font-size:0.8em;
+    color: gray;
+    font-size: 0.8em;
     margin-bottom: 3%;
+}
+
+#icon {
+    margin-left: 1.5%;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+        position: absolute;
+        bottom: 0;
     }
-    #icon{
-        margin-left: 1.5%;
-    }
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    #icon{
+
+    #icon {
         margin-left: 3%;
     }
-    
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
     }
-    .footer .row a i{
-    margin:0% 3%;
+
+    .footer .row a i {
+        margin: 0% 3%;
     }
-    }
+}
