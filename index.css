@@ -1,6 +1,7 @@
 #navbar{
     background-color: #343a40;
     color: white;
+    height: fit-content;
 }
 .nav-bar{
     margin-right: 1.3%;
@@ -184,7 +185,7 @@ td {
         padding: 5%;
     }
     #navbar{
-        height: 8%;
+        height:fit-content;
     }
     .home{
         width: 22%;
