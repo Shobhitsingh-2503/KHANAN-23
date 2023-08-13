@@ -126,11 +126,11 @@ td {
     .mobile-view{
         display: none;
     }
-    #mob-view{
-        display: none;
-    }
     #banner {
         height: 60%;
+    }
+    .home{
+        width:10%;
     }
 }
 
@@ -183,8 +183,16 @@ td {
         text-align: left;
         padding: 5%;
     }
+    #navbar{
+        height: 8%;
+    }
+    .home{
+        width: 22%;
+        margin-right: -3%;
+    }
     .nav-bar{
-        display: none;
+        font-size: 0.8rem;
+        margin-right: 5%;
     }
     #laptop-view{ /*FOR DIFF DISPLAY IN SCREENS (LAPTOP VIEW KAREGA AND MOBILE MAI NHI)*/
         display: none;

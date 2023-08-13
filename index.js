@@ -35,9 +35,7 @@ document.querySelector('.part').addEventListener("click",function(e){
   window.location.href = 'Registeration forms/nirvana/nirvana.html';
 })
 // mobile view navbar
-document.querySelector('#mob-view').addEventListener("click",function(e){
-  document.querySelector("#navbar").innerHTML ='<div style="height:fit-content"><div style="padding:1%">Workshops</div><div style="padding:1%">Guest Lectures</div><div style="padding:1%;text-decoration:none"><a href = "index.html" style="text-decoration:none">BACK</a></div></div>';
-})
+
 // page-buttons
 document.querySelector('#guest').addEventListener("click",function(e){
   window.location.href = 'guest.html';
