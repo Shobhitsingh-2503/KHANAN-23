@@ -20,7 +20,7 @@ form{
     background-color: black;
 }
 .footer {
-    background: #000;
+    background: #343a40;
     margin-top: 3%;
     padding: 30px 0px;
     font-family: 'Play', sans-serif;
@@ -28,7 +28,7 @@ form{
 
 .footer .row {
     margin: 2%;
-    color: gray;
+    color:#fdffff;
     font-size: 0.8em;
     margin-bottom: 3%;
 }
