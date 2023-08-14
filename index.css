@@ -178,7 +178,23 @@ td {
     font-size: 2em;
     margin: 0% 1%;
 }
-
+@media (min-width:721px) and (max-width: 767px){
+    .cards {
+        width: 80%;
+        height: 40%;
+        padding: 2%;
+        margin: 2%;
+    }
+    .mobile-view{
+        display: none;
+    }
+    #banner {
+        height: 60%;
+    }
+    .home{
+        width:10%;
+    }
+}
 @media (max-width:720px) { /*MOBILE*/
     .footer {
         text-align: left;
@@ -396,4 +412,14 @@ ul:nth-child(1) {
     width: fit-content;
     padding: 1.5%;
     border-radius: 20px;
+}
+
+/* for guest lectures */
+.venue{
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 2%;
+    margin-top: 20px;
 }
