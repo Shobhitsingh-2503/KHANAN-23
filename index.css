@@ -1,14 +1,16 @@
-#navbar{
+#navbar {
     background-color: #343a40;
     color: white;
     height: fit-content;
 }
-.nav-bar{
+
+.nav-bar {
     margin-right: 1.3%;
     text-decoration: none;
-    user-select: none;     
+    user-select: none;
 }
-.nav-bar:hover{
+
+.nav-bar:hover {
     cursor: pointer;
 }
 
@@ -117,21 +119,26 @@ td {
     margin: 5%;
 }
 
-@media only screen and (min-width: 768px) { /*laptop*/
+@media only screen and (min-width: 768px) {
+
+    /*laptop*/
     .cards {
         width: 80%;
         height: 40%;
         padding: 2%;
         margin: 2%;
     }
-    .mobile-view{
+
+    .mobile-view {
         display: none;
     }
+
     #banner {
         height: 60%;
     }
-    .home{
-        width:10%;
+
+    .home {
+        width: 10%;
     }
 }
 
@@ -178,42 +185,56 @@ td {
     font-size: 2em;
     margin: 0% 1%;
 }
-@media (min-width:721px) and (max-width: 767px){
+
+/*for mobile*/
+@media (min-width:721px) and (max-width: 767px) {
     .cards {
         width: 80%;
         height: 40%;
         padding: 2%;
         margin: 2%;
     }
-    .mobile-view{
+
+    .mobile-view {
         display: none;
     }
+
     #banner {
         height: 60%;
     }
-    .home{
-        width:10%;
+
+    .home {
+        width: 10%;
     }
 }
-@media (max-width:720px) { /*MOBILE*/
+
+@media (max-width:720px) {
+
+    /*MOBILE*/
     .footer {
         text-align: left;
         padding: 5%;
     }
-    #navbar{
-        height:fit-content;
+
+    #navbar {
+        height: fit-content;
     }
-    .home{
+
+    .home {
         width: 22%;
         margin-right: -3%;
     }
-    .nav-bar{
+
+    .nav-bar {
         font-size: 0.8rem;
         margin-right: 5%;
     }
-    #laptop-view{ /*FOR DIFF DISPLAY IN SCREENS (LAPTOP VIEW KAREGA AND MOBILE MAI NHI)*/
+
+    #laptop-view {
+        /*FOR DIFF DISPLAY IN SCREENS (LAPTOP VIEW KAREGA AND MOBILE MAI NHI)*/
         display: none;
     }
+
     #icon {
         margin-left: 3%;
     }
@@ -252,6 +273,7 @@ td {
     /* Black w/ opacity */
     transition: 300ms;
 }
+
 /* Modal Content/Box */
 .modal-content {
     background-color: white;
@@ -277,114 +299,6 @@ td {
 
     text-decoration: none;
     cursor: pointer;
-}
-
-/*<-------------------------MODAL CONTENT--------------------------->*/
-@import url(https://fonts.googleapis.com/css?family=Dosis:500);
-
-body {
-    background: #F1F1F1;
-}
-
-.container {
-    width: 1200px;
-    margin: auto;
-}
-
-.timeline {
-    counter-reset: year 0;
-    position: relative;
-    background: white;
-    margin-top: 3%;
-}
-
-.timeline:hover {
-    background-color: white;
-}
-
-.timeline li {
-    list-style: none;
-    float: left;
-    width: 33.3333%;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Dosis', sans-serif;
-}
-
-ul:nth-child(1) {
-    color: #4caf50;
-}
-
-.timeline li:before {
-    counter-increment: year;
-    content: counter(year);
-    width: 50px;
-    height: 50px;
-    border: 3px solid #4caf50;
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    margin: 0 auto 10px auto;
-    background: #F1F1F1;
-    color: #000;
-    transition: all ease-in-out .3s;
-    cursor: pointer;
-}
-
-.timeline li:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: grey;
-    top: 25px;
-    left: -50%;
-    z-index: -999;
-    transition: all ease-in-out .3s;
-}
-
-.timeline li:first-child:after {
-    content: none;
-}
-
-.timeline li.active {
-    color: #555555;
-}
-
-.timeline li.active:before {
-    background: #4caf50;
-    color: black;
-}
-
-.timeline li.active+li:after {
-    background: #4caf50;
-}
-
-/*<-------------------------TOOL TIP--------------------------->*/
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
 }
 
 /* PARTICIPATE */
@@ -415,11 +329,104 @@ ul:nth-child(1) {
 }
 
 /* for guest lectures */
-.venue{
+.venue {
     color: black;
     background-color: lightgray;
     border-radius: 5px;
     width: fit-content;
     padding: 2%;
     margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------NEW START=========================================================================================================================================================================================================================================================================== */
+.new-cards {
+    border: black solid 4px;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2%;
+    margin: 3%;
+}
+
+.new-headings {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 0;
+    padding: 0.7%;
+}
+
+.poster {
+    border: 4px solid black;
+    margin-bottom: 3%;
+}
+
+.new-part {
+    padding: 2%;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-right: 17%;
+    padding-left: 17%;
+}
+
+.new-demo {
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.5%;
+    margin-top: 4%;
+    background-color: lightgray;
+}
+
+@media only screen and (min-width: 768px) {
+    /*LAPTOP*/
+
+}
+
+@media (max-width:720px) {
+    /*MOBILE*/
+.new-cards{
+    margin: 5%;
+}
+}
+
+/*Landscape mode for some mobiles*/
+@media (min-width:721px) and (max-width: 957px) {
+    .new-part {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+.mob-heading {
+    background-color: black;
+    color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0.5%;
+}
+
+.mob-img {
+    border: black solid 3px;
+    margin-bottom: 3%;
+}
+
+.mob-part {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 2%;
+    padding-right: 13%;
+    padding-left: 13%
+}
+.mob-demo {
+    color: black;
+    background-color: lightgrey;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5%;
 }

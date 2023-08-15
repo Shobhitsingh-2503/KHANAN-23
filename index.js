@@ -37,13 +37,5 @@ document.querySelector('.part').addEventListener("click",function(e){
 // mobile view navbar
 
 // page-buttons
-document.querySelector('#guest').addEventListener("click",function(e){
-  window.location.href = 'guest.html';
-})
-document.querySelector('#work').addEventListener("click",function(e){
-  window.location.href = 'workshop.html';
-})
-document.querySelector('.home').addEventListener("click",function(e){
-  window.location.href = 'index.html';
-})
+
  

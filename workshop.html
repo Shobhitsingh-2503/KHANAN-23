@@ -27,9 +27,10 @@
 <body>
     <div id="navbar">
         <img class="home" src="Khanan'23-logo.png" width="10%">
-        <span class="nav-bar">KHANAN</span>
+        <span class="nav-bar" id="return">KHANAN</span>
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
+        <span class="nav-bar" id="contact">Contact us</span>
     </div>
 <!-- cards -->
 <h2 align="center"  style="margin-top: 3%; margin-bottom: 0;">WORKSHOPS</h2>
@@ -163,8 +164,11 @@
 document.querySelector('#guest').addEventListener("click",function(e){
   window.location.href = 'guest.html';
 })
-document.querySelector('#work').addEventListener("click",function(e){
-  window.location.href = 'workshop.html';
+document.querySelector('#return').addEventListener("click",function(e){
+  window.location.href = 'index.html';
+})
+document.querySelector('#contact').addEventListener("click",function(e){
+  window.location.href = 'contact-us.html';
 })
 document.querySelector('.home').addEventListener("click",function(e){
   window.location.href = 'index.html';
