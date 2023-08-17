@@ -392,6 +392,14 @@ td {
 .new-cards{
     margin: 5%;
 }
+.heading{
+    background: url(5855.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    padding: 2%;
+    margin: 0;
+}
 }
 
 /*Landscape mode for some mobiles*/
@@ -399,6 +407,14 @@ td {
     .new-part {
         padding-left: 12%;
         padding-right: 12%;
+    }
+    .heading{
+        background: url(5855.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 55%;
+        padding: 2%;
+        margin: 0;
     }
 }
 
@@ -420,8 +436,8 @@ td {
     background-color: black;
     border-radius: 20px;
     padding: 2%;
-    padding-right:12%;
-    padding-left: 12%
+    padding-right:7%;
+    padding-left: 7%
 }
 .mob-demo {
     color: black;
@@ -429,4 +445,12 @@ td {
     border-radius: 5px;
     width: 100%;
     margin-top: 5%;
+}
+.heading{
+    background: url('5855.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    padding: 2%;
+    margin: 0;
 }
