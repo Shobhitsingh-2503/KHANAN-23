@@ -381,8 +381,10 @@
             <div class="row" style="margin:2%;">MADE WITH ❤️</div>
         </div>
     </footer>
+    <button onclick="topFunction()" id="butt" title="Go to top"><i class="fa fa-angle-up"></i></button>
 </body>
 <script src="index.js"></script>
+
 <!-- <script>
     document.querySelector('#guest').addEventListener("click",function(e){
   window.location.href = 'guest.html';
@@ -397,5 +399,25 @@ document.querySelector('#contact').addEventListener("click",function(e){
   window.location.href = 'contact-us.html';
 })
 </script> -->
+<script>
+    let mybutton = document.getElementById("butt");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 </html>
