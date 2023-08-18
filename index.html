@@ -26,13 +26,35 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div>
+                <img src="Khanan'23-logo.png" width="10%">
+                <span>KHANAN</span>
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="workshop.html">WORKSHOP</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="guest.html">GUEST</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <div id="navbar">
         <img  class= "home" src="Khanan'23-logo.png">
         <span class="nav-bar">KHANAN</span>
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
         <span class="nav-bar" id="contact">📞</span>
-    </div>
+    </div> -->
     <div id="hero-sec">
         <img src="hero.png" id="banner" width="100%">
         <div align="center">
@@ -68,8 +90,8 @@
                 <td>
                     <div class="new-cards">
                         <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
                         <span class="new-part">Rule-book</span>
                         <p class="new-demo">28th September 14:00 pm</p>
                     </div>
@@ -77,28 +99,8 @@
                 <td>
                     <div class="new-cards">
                         <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
-                        <span class="new-part">Rule-book</span>
-                        <p class="new-demo">28th September 14:00 pm</p>
-                    </div>
-                </td>
-            </tr>
-            <tr align="center">
-                <td>
-                    <div class="new-cards">
-                        <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
-                        <span class="new-part">Rule-book</span>
-                        <p class="new-demo">28th September 14:00 pm</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="new-cards">
-                        <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
                         <span class="new-part">Rule-book</span>
                         <p class="new-demo">28th September 14:00 pm</p>
                     </div>
@@ -108,8 +110,8 @@
                 <td>
                     <div class="new-cards">
                         <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
                         <span class="new-part">Rule-book</span>
                         <p class="new-demo">28th September 14:00 pm</p>
                     </div>
@@ -117,8 +119,8 @@
                 <td>
                     <div class="new-cards">
                         <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
                         <span class="new-part">Rule-book</span>
                         <p class="new-demo">28th September 14:00 pm</p>
                     </div>
@@ -128,8 +130,28 @@
                 <td>
                     <div class="new-cards">
                         <h4 class="new-headings">GAMICON</h4>
-                        <img src="poster.jpg" class="poster"  width="100%">
-                        <span  class="new-part">Register</span>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
+                        <span class="new-part">Rule-book</span>
+                        <p class="new-demo">28th September 14:00 pm</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="new-cards">
+                        <h4 class="new-headings">GAMICON</h4>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
+                        <span class="new-part">Rule-book</span>
+                        <p class="new-demo">28th September 14:00 pm</p>
+                    </div>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <div class="new-cards">
+                        <h4 class="new-headings">GAMICON</h4>
+                        <img src="poster.jpg" class="poster" width="100%">
+                        <span class="new-part">Register</span>
                         <span class="new-part">Rule-book</span>
                         <p class="new-demo">28th September 14:00 pm</p>
                     </div>
@@ -138,14 +160,14 @@
         </table><br>
         <div class="heading" align="center" style="font-size: xx-large;font-weight:800;margin-bottom: 1%;">MAIN-EVENTS
         </div>
-        <div id="laptop-view"> 
+        <div id="laptop-view">
             <table>
                 <tr align="center">
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -153,28 +175,8 @@
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
-                            <span class="new-part">Rule-book</span>
-                            <p class="new-demo">28th September 14:00 pm</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr align="center">
-                    <td>
-                        <div class="new-cards">
-                            <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
-                            <span class="new-part">Rule-book</span>
-                            <p class="new-demo">28th September 14:00 pm</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="new-cards">
-                            <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -184,8 +186,8 @@
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -193,8 +195,8 @@
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -204,8 +206,8 @@
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -213,8 +215,28 @@
                     <td>
                         <div class="new-cards">
                             <h4 class="new-headings">GAMICON</h4>
-                            <img src="poster.jpg" class="poster"  width="100%">
-                            <span  class="new-part">Register</span>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
+                            <span class="new-part">Rule-book</span>
+                            <p class="new-demo">28th September 14:00 pm</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <div class="new-cards">
+                            <h4 class="new-headings">GAMICON</h4>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
+                            <span class="new-part">Rule-book</span>
+                            <p class="new-demo">28th September 14:00 pm</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="new-cards">
+                            <h4 class="new-headings">GAMICON</h4>
+                            <img src="poster.jpg" class="poster" width="100%">
+                            <span class="new-part">Register</span>
                             <span class="new-part">Rule-book</span>
                             <p class="new-demo">28th September 14:00 pm</p>
                         </div>
@@ -361,7 +383,7 @@
     </footer>
 </body>
 <script src="index.js"></script>
-<script>
+<!-- <script>
     document.querySelector('#guest').addEventListener("click",function(e){
   window.location.href = 'guest.html';
 })
@@ -374,5 +396,6 @@ document.querySelector('.home').addEventListener("click",function(e){
 document.querySelector('#contact').addEventListener("click",function(e){
   window.location.href = 'contact-us.html';
 })
-</script>
+</script> -->
+
 </html>

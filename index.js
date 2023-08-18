@@ -31,11 +31,26 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-document.querySelector('.part').addEventListener("click",function(e){
-  window.location.href = 'Registeration forms/nirvana/nirvana.html';
-})
+// document.querySelector('.part').addEventListener("click",function(e){
+//   window.location.href = 'Registeration forms/nirvana/nirvana.html';
+// })
 // mobile view navbar
 
-// page-buttons
+// navbar
+
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
  

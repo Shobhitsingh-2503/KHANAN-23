@@ -26,42 +26,64 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div>
+                <img src="Khanan'23-logo.png" width="10%">
+                <span>KHANAN</span>
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="workshop.html">WORKSHOP</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="guest.html">GUEST</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <div id="navbar">
         <img  class= "home" src="Khanan'23-logo.png">
         <span class="nav-bar" id="return">KHANAN</span>
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
-    </div>
-<h2 align="center">Conveners</h2>
-<table align="center">
-    <tr>
-        <td>
-            <img src="" alt="">
-            <p>SHUBAHM PANDEY</p>
-            <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-        </td>
-        <td>
-            <img src="" alt="">
-            <p>NAVDESH UTTAM YADAV</p>
-            <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-        </td>
-    </tr>    
-</table>
-<h2 align="center">Co-ordinators</h2>
-<table align="center">
-    <tr>
-        <td>
-            <img src="" alt="">
-            <p>SHAILESH YADAV</p>
-            <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-        </td>
-        <td>
-            <img src="" alt="">
-            <p>SHOBHIT SINGH</p>
-            <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-        </td>
-    </tr>    
-</table>
+    </div> -->
+    <h2 align="center" class="motive">Conveners</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <img src="" alt="">
+                <p>SHUBAHM PANDEY</p>
+                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
+            </td>
+            <td>
+                <img src="" alt="">
+                <p>NAVDESH UTTAM YADAV</p>
+                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
+            </td>
+        </tr>
+    </table>
+    <h2 align="center">Co-ordinators</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <img src="" alt="">
+                <p>SHAILESH YADAV</p>
+                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
+            </td>
+            <td>
+                <img src="" alt="">
+                <p>SHOBHIT SINGH</p>
+                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
+            </td>
+        </tr>
+    </table>
 
 
 
@@ -76,19 +98,19 @@
                         class="fa fa-linkedin"></i></a>
                 <a href="mailto:smeiitismstudentchapter@gmail.com
                 " target="_blank" id="icon"><i class="fa fa-envelope"></i></a>
-                <a id="icon" class="contact"><i class="fa fa-comments"></i></a>                
+                <a id="icon" class="contact"><i class="fa fa-comments"></i></a>
             </div>
             <div class="row">
                 SME IIT ISM Student Chapter Copyright © 2023 All rights reserved || Designed By: Shobhit Singh
             </div>
             <div class="row" style="margin:2%;">MADE WITH ❤️</div>
-            
+
 
         </div>
     </footer>
 
 </body>
-<script>
+<!-- <script>
     document.querySelector('#guest').addEventListener("click",function(e){
       window.location.href = 'guest.html';
     })
@@ -101,5 +123,22 @@
     document.querySelector('#return').addEventListener("click",function(e){
   window.location.href = 'index.html';
 })
-    </script>
+    </script> -->
+<script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+    const navbarMenu = document.querySelector("#navbar-menu");
+    const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+    let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+    const toggleNavbarVisibility = () => {
+        isNavbarExpanded = !isNavbarExpanded;
+        navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+    };
+
+    navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+    navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+    navbarMenu.addEventListener("click", toggleNavbarVisibility);
+</script>
+
 </html>

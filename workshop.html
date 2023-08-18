@@ -25,16 +25,38 @@
     <title>Workshop</title>
 </head>
 <body>
-    <div id="navbar">
+    <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            <img src="Khanan'23-logo.png" width="10%">
+            <span>KHANAN</span>
+          </a>
+          <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="workshop.html">WORKSHOP</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="guest.html">GUEST</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <!-- <div id="navbar">
         <img class="home" src="Khanan'23-logo.png" width="10%">
         <span class="nav-bar" id="return">KHANAN</span>
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
         <span class="nav-bar" id="contact">📞</span>
-    </div>
+    </div> -->
 <!-- cards -->
-<h2 align="center"  style="margin-top: 3%; margin-bottom: 0;">WORKSHOPS</h2>
+<h3 align="center" class="motive" style="margin-bottom: 0;">WORKSHOPS</h2>
 <div id="laptop-view"> <!-- NOW THE FEST EVENTS laptop and pad-->
+   
     <table>
         <tr align="center">
             <td>
@@ -160,7 +182,7 @@
         </div>
     </footer>
 </body>
-<script>
+<!-- <script>
 document.querySelector('#guest').addEventListener("click",function(e){
   window.location.href = 'guest.html';
 })
@@ -173,5 +195,21 @@ document.querySelector('#contact').addEventListener("click",function(e){
 document.querySelector('.home').addEventListener("click",function(e){
   window.location.href = 'index.html';
 })
+</script> -->
+<script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
 </script>
 </html>
