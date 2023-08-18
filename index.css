@@ -134,6 +134,7 @@ td {
 
     #banner {
         height: 60%;
+        margin-top: 4%;
     }
 
     .home {
@@ -633,5 +634,8 @@ body {
     /*MOBILE*/
     .motive{
         padding-top: 20%;
+    }
+    #banner{
+        margin-top: 10%;
     }
 }
