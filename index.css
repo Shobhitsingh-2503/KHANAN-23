@@ -639,6 +639,11 @@ body {
         margin-top: 10%;
     }
 }
+@media (min-width:721px) and (max-width: 957px) {
+    #banner{
+        margin-top: 13%;
+    }
+}
 #butt {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -650,7 +655,7 @@ body {
     background-color: #262626; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 20px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
