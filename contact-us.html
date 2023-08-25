@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="icon" type="image/x-icon" href="sme.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -25,7 +26,11 @@
     <title>KHANAN 23 🔥</title>
 </head>
 
-<body>
+<body style="background: url('https://ik.imagekit.io/tttjlp0fj/8945444_4040926.jpg?updatedAt=1692975580614');
+    background-size: 100%;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;">
     <header id="navbar">
         <nav class="navbar-container container">
             <a href="index.html" class="home-link">
@@ -43,6 +48,7 @@
                 <ul class="navbar-links">
                     <li class="navbar-item"><a class="navbar-link" href="workshop.html">WORKSHOP</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="guest.html">GUEST</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="ccp.html">College Connect</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -54,53 +60,54 @@
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
     </div> -->
-    <h2 align="center" class="motive">Conveners</h2>
     <table>
-        <tr>
-            <td>
-                <img src="" alt="">
-                <p>SHUBAHM PANDEY</p>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-            <td>
-                <img src="" alt="">
-                <p>NAVDESH UTTAM YADAV</p>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-        </tr>
-    </table>
-    <h2 align="center">Co-ordinators</h2>
-    <table>
-        <tr>
-            <td>
-                <img src="" alt="">
-                <p>SHAILESH YADAV</p>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-            <td>
-                <img src="" alt="">
-                <p>SHOBHIT SINGH</p>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-        </tr>
-    </table>
-    <h2 align="center">CORE TEAM</h2>
-    <table>
-        <tr>
-            <td>
-                <img src="" alt="">
-                <p>KUSHAL SENA R</p>
-                <pre>(EVENT HEAD)</pre>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-            <td>
-                <img src="" alt="">
-                <p>Souhardya Garai</p>
-                <pre>(DESIGNING HEAD)</pre>
-                <p><span><i class="fa fa-linkedin"></i></span> <span><i class="fa fa-phone"></i></span></p>
-            </td>
-            
-        </tr>
+        <td>
+            <tr>
+                <div id="curve" class="card">
+                    <div class="foot">
+                        <div class="connections">
+                            <div class="connection facebook">
+                                <div class="icon"><i class="fa fa-facebook"></i></div>
+                            </div>
+                            <div class="connection twitter">
+                                <div class="icon"><i class="fa fa-instagram"></i></div>
+                            </div>
+                            <div class="connection behance">
+                                <div class="icon"><i class="fa fa-linkedin"></i></div>
+                            </div>
+                        </div>
+                        <svg id="curve">
+                            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                            <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                            <!-- slide up-->
+                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50"
+                                fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s"
+                                id="bounce1" />
+                            <!-- slide up and curve in -->
+                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze"
+                                begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                            <!-- slide down and curve in -->
+                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50"
+                                fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                            <!-- slide down and curve out -->
+                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50"
+                                fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                            <!-- curve in -->
+                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50"
+                                fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                            <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50"
+                                fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                        </svg>
+                        <div class="info">
+                            <div class="name">SHOBHIT SINGH</div>
+                            <div class="job">AD. SECRETARY</div>
+                        </div>
+                    </div>
+                    <div class="card-blur"></div>
+                </div>
+            </tr>
+        </td>
     </table>
 
 
@@ -114,7 +121,7 @@
                 <a href="https://www.linkedin.com/in/sme-iit-ism-student-chapter-031962206" target="_blank" id="icon"><i
                         class="fa fa-linkedin"></i></a>
                 <a href="mailto:smeiitismstudentchapter@gmail.com
-                " target="_blank" id="icon"><i class="fa fa-envelope"></i></a>   
+                " target="_blank" id="icon"><i class="fa fa-envelope"></i></a>
             </div>
             <div class="row">
                 SME IIT ISM Student Chapter Copyright © 2023 All rights reserved || Designed By: Shobhit Singh

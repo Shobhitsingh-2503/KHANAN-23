@@ -345,6 +345,8 @@ td {
     width: fit-content;
     padding: 2%;
     margin: 3%;
+    backdrop-filter: blur(5px);
+
 }
 
 .new-headings {
@@ -379,7 +381,7 @@ td {
     width: 100%;
     padding: 1.5%;
     margin-top: 4%;
-    background-color: lightgray;
+    background-color: #d6a384;
 }
 
 @media only screen and (min-width: 768px) {
@@ -436,7 +438,7 @@ td {
 
 .mob-demo {
     color: black;
-    background-color: lightgrey;
+    background-color: #d6a384;
     border-radius: 5px;
     width: 100%;
     margin-top: 5%;
@@ -478,6 +480,7 @@ body {
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 999;
 }
 
 .navbar-container {
@@ -649,7 +652,7 @@ body {
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
+    z-index: 998; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #262626; /* Set a background color */
