@@ -19,6 +19,9 @@ tr{
     .image{
         width: 80px;
     }
+    #laptop{
+        display: none;
+    }
 }
 .cards{
     border: 1px solid black;
