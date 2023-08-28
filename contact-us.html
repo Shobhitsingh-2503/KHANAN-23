@@ -60,57 +60,89 @@
         <span class="nav-bar" id="work">Workshops</span>
         <span class="nav-bar" id="guest">Guest Lectures</span>
     </div> -->
+    
+    <div id="box">
     <table>
-        <td>
-            <tr>
-                <div id="curve" class="card">
-                    <div class="foot">
-                        <div class="connections">
-                            <div class="connection facebook">
-                                <div class="icon"><i class="fa fa-facebook"></i></div>
-                            </div>
-                            <div class="connection twitter">
-                                <div class="icon"><i class="fa fa-instagram"></i></div>
-                            </div>
-                            <div class="connection behance">
-                                <div class="icon"><i class="fa fa-linkedin"></i></div>
-                            </div>
-                        </div>
-                        <svg id="curve">
-                            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
-                            <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
-                            <!-- slide up-->
-                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50"
-                                fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s"
-                                id="bounce1" />
-                            <!-- slide up and curve in -->
-                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze"
-                                begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
-                            <!-- slide down and curve in -->
-                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50"
-                                fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
-                            <!-- slide down and curve out -->
-                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50"
-                                fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
-                            <!-- curve in -->
-                            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50"
-                                fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
-
-                            <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50"
-                                fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
-                        </svg>
-                        <div class="info">
-                            <div class="name">SHOBHIT SINGH</div>
-                            <div class="job">AD. SECRETARY</div>
-                        </div>
-                    </div>
-                    <div class="card-blur"></div>
+        <tr>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Shubham Pandey</h5>
+                    <h6>President</h6>
+                    <a href=""><i class="fa fa-linkedin" ></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
                 </div>
-            </tr>
-        </td>
+            </td>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Navdesh Yadav</h5>
+                    <h6>Vice President</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>                
+            </td>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Himanshu Shekhar</h5>
+                    <h6>Secretary ERRA</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Shailesh Raj</h5>
+                    <h6>Secretary</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>                
+            </td>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Shobhit Singh</h5>
+                    <h6>Additional Secretary</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </td>            
+        </tr>
+        <tr>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Kushal Sena R</h5>
+                    <h6>Events Team Head</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>                
+            </td>
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Nikita Sharma</h5>
+                    <h6>Promotions Team Head</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </td>  
+            <td align="center">
+                <div class="cards">
+                    <img src="dp-removebg-preview.png" class="image">
+                    <h5>Mudavath Ganesh</h5>
+                    <h6>Public Relations Head</h6>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </td>            
+        </tr>
     </table>
-
-
+    </div>
     <footer>
         <div class="footer">
             <div class="row">
