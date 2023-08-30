@@ -1,0 +1,18 @@
+tasks left :- 
+(MAIN PAGE)
+posters
+link to the rule book and registeration forms
+after a certain date release the main events
+
+(WORKSHOP)
+link all images to the CDN for fast loading
+
+(Guest lecture)
+
+(College Connect page)
+Link to the registeration form
+
+(Contact Us)
+PC version complete
+Mobile version of the page 
+Desiging ideas are welcomed
