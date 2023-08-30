@@ -1,7 +1,7 @@
 document.querySelector("#btn").addEventListener("click", scrolldown);
 function scrolldown(x, y) {
   window.scrollBy({
-    top: 600,
+    top: 400,
     left: y,
     behavior: "smooth",
   });
