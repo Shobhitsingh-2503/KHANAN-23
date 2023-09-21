@@ -684,3 +684,9 @@ body {
     height: 100%;
     opacity: 0.4;
 }
+
+@media only screen and (min-width: 768px) {
+    .mobile-new{
+        display: none;
+    }
+}
